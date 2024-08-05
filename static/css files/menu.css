@@ -1,0 +1,35 @@
+#heading {
+    font-family: 'pacifico', cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    margin-left: 1.5rem;
+    display: inline;
+}
+
+#menu {
+    display: flex;
+    overflow-y: hidden;    /*Remember this to make slider easily*/
+}
+
+.menu {
+    padding: 0 2.1rem 0 2.3rem;
+
+}
+#sale:hover{
+    cursor: pointer;
+
+}
+
+.menu h2 {
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+.menu img {
+    width: 20vw;
+    height: 25vh;
+}
+#abbeyyaar{
+    text-decoration: none;
+    color: black;
+}

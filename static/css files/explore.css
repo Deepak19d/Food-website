@@ -1,0 +1,54 @@
+#expheading{
+    margin-left: 15rem;
+    margin-top: 3rem;
+    font-family: 'Prompt', sans-serif;
+    font-size: 2.5rem;
+}   
+#explore{
+    margin-left: 15rem;
+    margin-top: 1rem;
+    font-family: 'Prompt', sans-serif;
+}   
+    
+    
+.explore{
+    border: 1px solid rgb(130, 130, 130);
+    width: 60vw;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+.explore span{
+    font-weight:bold;
+    font-size: 1.3rem;
+}
+.explore p,.hide3,.hide4{
+    border: 2px solid white;
+    margin-top: 1rem;
+}
+.explore td{
+    padding-right: 3rem;
+    padding-bottom: 1.5rem;
+}
+#seemore{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.expand1,.shrink1{
+    margin-left: 38rem;
+}
+.expand2,.shrink2{
+    margin-left: 32.7rem;
+}
+.expand3,.shrink3{
+    margin-left: 40rem;
+}
+.expand4,.shrink4{
+    margin-left: 41.3rem;
+}
+.hide1,.hide2,.hide3,.hide4,.shrink1,.shrink2,.shrink3,.shrink4{
+    display: none;
+}
+.expand1,.expand2,.expand3,.expand4,.shrink1,.shrink2,.shrink3,.shrink4:hover{
+    cursor: pointer;
+}    

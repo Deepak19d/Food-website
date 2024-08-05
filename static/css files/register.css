@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: "";
+    background: url('../Images/signupbg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+}
+#signbox{
+    text-align: center;
+    position: fixed;
+    margin-left: 35rem;
+    margin-top: 7rem; 
+    box-shadow: 1rem 1rem rgb(141, 147, 152);
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    width: 25rem;
+    height: 33rem;
+    font-size: 1.2rem;
+    width: 27rem;
+
+}
+body h1{
+    margin-bottom: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    background-color: rgb(170, 178, 185);
+}
+form,a{
+    font-family: 'Hind', sans-serif;
+}
+input{
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+#submit{
+    color: black;
+    background-color: rgb(170, 178, 185);
+    border: 2px solid rgb(126, 130, 133);
+    margin-bottom: 1rem;
+}
+#submit:hover{
+
+    transform: scale(1.02);
+}
+#submit:active{
+    transform: translateY(2px);
+}
+a{
+    text-decoration: none;
+    color: blue;
+}

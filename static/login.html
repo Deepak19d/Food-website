@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    	<link rel="icon" href="./Images/favicon.ico">
+		<title>FoodZilla | Login</title>
+		<link rel="stylesheet" href="./css files/login.css">
+	</head>
+	<body>
+		<div id="bg"></div>
+		<div id="loginbox">
+		<h1>Login</h1>
+		<form id="login">
+			<label>Username:</label>
+			<input type="text" autocomplete="off" id="username" placeholder="Username" /><br><br>
+			<label>Password:</label>
+			<input type="password" autocomplete="off" id="password" placeholder="Password" /><br><br>
+			<input type="submit" value="Log in" id="submit" /><br><br>
+		</form>
+		<a href="forgot-password.html">Forget Password?</a><br>
+		Return to <a href="index.html">HomePage</a><br>
+		<a href="change-password.html">Change Password</a>
+		</div>
+		<script>
+			const form = document.getElementById('login')
+			form.addEventListener('submit', login)
+
+			async function login(event) {
+				event.preventDefault()
+				const username = document.getElementById('username').value
+				const password = document.getElementById('password').value
+
+				const result = await fetch('/api/login', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						username,
+						password
+					})
+
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					// everything went fine
+					console.log('Got the token: ', result.data)
+					localStorage.setItem('token', result.data)
+						window.location.href = ["./index.html"];
+					alert('You have Successfully logged into your account')
+				} else {
+					alert(result.error)
+				}
+			}
+		</script>
+
+	</body>
+</html>

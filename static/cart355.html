@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="icon" href="./Images/favicon.ico">
+  <title>FoodZilla | Menu</title>
+  <link rel="stylesheet" href="./css files/style.css" />
+  <link rel="stylesheet" href="./css files/footer.css">
+  <script src="./js-files/fun.js"></script>
+</head>
+
+<body>
+  <div id="arrowtop"></div>
+    <a href="#arrowtop"><img src="./Images/Arrow up.png" alt="Arrow Up" id="arrowup" class="blurbg"></a>
+  <nav id="navbar" class="blurbg">
+    <div id="logo"><img src="./Images/Logo_prev_ui.png" alt="FoodZilla.com"></div>
+    <ul id="option">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="#ending">Contact</a></li>
+    </ul>
+  </nav>
+  <h1 id="menuhai">Menu</h1>
+
+
+  <section class="Container content-section">
+    <h2 class="section-header">Northern Cuisine</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/cholebhature.jpg" />
+        <span class="shop-item-title">Chole Bhature</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.260.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/rajmachawal.jpg" />
+        <span class="shop-item-title">Rajma Chawal</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.145.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/dahibhalle.webp" />
+        <span class="shop-item-title">Dahi Bhalle</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.65.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/pavbhaji.jpg" />
+        <span class="shop-item-title" id="pavbhaji">Pav Bhaji</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.100.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <h2 class="section-header">Eastern Cuisine</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/littichoke.jpg" />
+        <span class="shop-item-title">Litti Choka</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.125.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/rasgulla.png" />
+        <span class="shop-item-title">Rasgulla</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.75.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/rasmalai.jpg" />
+        <span class="shop-item-title">Rasmalai</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.145.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/thukpa.jpeg" />
+        <span class="shop-item-title" id="thupka">Thukpa</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.175.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h2 class="section-header">Southern Cuisine</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/dosa.jpg" />
+        <span class="shop-item-title">Dosa</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.260.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/idli.webp" />
+        <span class="shop-item-title">Idli Sambhar</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.170.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/vada.jpg" />
+        <span class="shop-item-title" id="vada">Vada</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.75.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/uttapam.jpg" />
+        <span class="shop-item-title">Uttapam</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.125.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h2 class="section-header">Western Cuisine</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/fishcurry.jpg" />
+        <span class="shop-item-title">Fish Curry</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.320.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/dhokla.jpg" />
+        <span class="shop-item-title">Dhokla</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.125.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/thepla.jpg" />
+        <span class="shop-item-title">Thepla</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.99.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/ghewar.jpg" />
+        <span class="shop-item-title" id="ghewar">Ghewar</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.175.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h2 class="section-header">Chinese Cuisine</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/zhejiang.jpg" />
+        <span class="shop-item-title">Zhejiang</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.350.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/momos.jpg" />
+        <span class="shop-item-title">Momos</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.145.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/ramen.jpg" />
+        <span class="shop-item-title">Ramen</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.245.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/fuijan.jpg" />
+        <span class="shop-item-title" id="fujian">Fujian</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.100.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <h2 class="section-header">Continental Cuisine</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+        <img class="shop-item-image" src="./Images/hashbrown.jpg" />
+        <span class="shop-item-title">Hash Brown</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.150.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/frenchtoast.png" />
+        <span class="shop-item-title">French Toast</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.65.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/pasta.jpg" />
+        <span class="shop-item-title" id="pasta">Pasta</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.175.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/salad.jpg" />
+        <span class="shop-item-title">Caesar Salad</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.100.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h2 class="section-header">Snacks</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/pizza.jpg" />
+        <span class="shop-item-title">Pizza</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.199.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/doughnut.jpg" />
+        <span class="shop-item-title">Doughnuts</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.145.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/burger.jpg" />
+        <span class="shop-item-title">Burger</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.75.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/wings.jpg" id="wings">
+        <span class="shop-item-title">Chicken Wings</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.175.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <h2 class="section-header">Sweet Dish</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+        <img class="shop-item-image" src="./Images/icecream.jpg" />
+        <span class="shop-item-title">Ice Cream</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.50.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/cake.png" />
+        <span class="shop-item-title" id="pastry">Pastry</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.75.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/gulabjamun.jpg" />
+        <span class="shop-item-title">Gulab Jamun</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.100.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <img class="shop-item-image" src="./Images/ladoo.avif" />
+        <span class="shop-item-title" id="ladoo">Ladoos</span>
+        <div class="shop-item-details">
+          <span class="shop-item-price">Rs.25.00</span>
+          <button class="btn btn-primary shop-item-button" type="button" onclick="kart()">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+  <section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+      <span class="cart-item cart-header cart-column" >ITEM</span>
+      <span class="cart-price cart-header cart-column">PRICE</span>
+      <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+      <!--Start removing from here once done
+        <div class="cart-row">
+          <div class="cart-item cart-columm">
+            <img
+            class="cart-item-image"
+            src="https://th.bing.com/th/id/OIP.DnFI5Bt84HyD6DrFnXDdngHaE8?pid=ImgDet&rs=1"
+            width="200"
+            height="200"
+            />
+             <span class="cart-item-title">Cheese Pizza</span>
+         </div>
+            <span class="cart-price cart-column">Rs.299</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="1" />
+               <button class=" btn btn-danger" type="button">Remove</button>
+            </div>
+       </div>
+       <div class="cart-row">
+         <div class="cart-item cart-columm">
+           <img
+            class="cart-item-image"
+            src="https://th.bing.com/th/id/OIP.rKNHq70wFcO6FA6ccaGOhQHaJQ?w=203&h=254&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+            width="200"
+            height="200"
+             />
+             <span class="cart-item-title">T-shirt</span>
+          </div>
+         <span class="cart-price cart-column">Rs.299</span>
+         <div class="cart-quantity cart-column">
+             <input class="cart-quantity-input" type="number" value="1" />
+             <button class="btn btn-danger" type="button">Remove</button>
+          </div>
+        </div>  -->
+    </div>
+    <form action="./paym.html">
+      <div class="cart-total">
+        <strong class="cart-total-title">Total:</strong>
+        <span class="cart-total-price">Rs.0</span>
+        <span id="gst">(Including GST)</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button" id="hope">
+        <!-- <a href="paym.html"> -->
+          PLACE ORDER
+        <!-- </a>  -->
+      </button>
+    </form>
+  </section>
+  <h1 id="jyadahope">
+    <wow class="material-symbols-outlined cardclose">close</wow> <span>Thank You!!</span> <span> Your Order have been Placed&#128516;</span> <span>We will contact through your Mobile Number for further Information.</span></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <footer class="blurbg">
+    <div id="ending">
+      <img src="./Images/Logo_prev_ui.png" alt="FoodZilla.com">
+      <h1>FoodZilla</h1>
+      <div id="written">
+        <table>
+          <tr>
+            <td class="tab1">About FoodZilla</td>
+            <td class="tab2">Foodverse</td>
+            <td class="tab3">Contact</td>
+            <td class="tab4">Learn More</td>
+            <td class="tab5">Legal</td>
+          </tr>
+          <tr>
+            <td>Who We Are</td>
+            <td>FoodZilla</td>
+            <td>Help & Support</td>
+            <td>Privacy</td>
+            <td>Terms and Conditions</td>
+          </tr>
+          <tr>
+            <td>Blog</td>
+            <td>Feeding India</td>
+            <td>Partner with Us</td>
+            <td>Security</td>
+            <td>Refund & Cancellation</td>
+          </tr>
+          <tr>
+            <td>Investor Relation</td>
+            <td>Hyperpure</td>
+            <td>Ride with Us</td>
+            <td>Terms</td>
+            <td>Offer Terms</td>
+          </tr>
+          <tr>
+            <td>Report Fraud</td>
+            <td>Foodland</td>
+            <td></td>
+            <td>Sitemap</td>
+            <td>Cookie Policy</td>
+          </tr>
+
+        </table>
+      </div>
+      <div id="socialmedia">
+        <h2>Social Media</h2>
+        <a href="https://www.instagram.com/" target="_blank"><img src="./Images/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com/i/flow/login" target="_blank"><img src="./Images/twitter.png" alt="Twitter"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="./Images/youtube.png" alt="Youtube"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="./Images/facebook.png" alt="Facebook"></a>
+        <div>
+          <a href="https://play.google.com/store/games?hl=en_IN&gl=US" target="_blank"><img src="./Images/google play.png"
+              alt="PlayStore"></a>
+          <a href="https://www.apple.com/in/app-store/" target="_blank"><img src="./Images/appstore.png" alt="Appstore"></a>
+        </div>
+      </div>
+      <div id="copyright">
+        <h2>&copy;FoodZilla<sup style="font-size:0.8rem;">TM</sup>| All Rights Reserved</h2>
+      </div>
+    </div>
+
+  </footer>
+  <!--<script src="fun.js" async></script> -->
+  <!--
+    <div class="cart-item cart-columm">
+      <img
+        class="cart-item-image"
+        src="https://th.bing.com/th/id/OIP.DnFI5Bt84HyD6DrFnXDdngHaE8?pid=ImgDet&rs=1"
+        width="200"
+        height="200"
+      />
+      <span class="cart-item-title">Cheese Pizza</span>
+    </div>
+    <span class="cart-price carrt-column">R:299</span>
+    <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" type="number" value="1" />
+      <button class="btn btn-danger" type="button">Remove</button>
+    </div>-->
+</body>
+
+</html>

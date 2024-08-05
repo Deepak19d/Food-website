@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css files/register.css">
+	<link rel="icon" href="./Images/favicon.ico">
+	<title>FoodZilla | Sign Up</title>
+</head>
+
+<body>
+	<div id="signbox">
+		<h1>Sign Up</h1>
+		<form id="reg-form">
+			<label>Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</label>
+			<input type="text" autocomplete="off" id="username" placeholder="Username" /><br><br>
+			<label>Email Id:&nbsp;&nbsp;&emsp; &emsp; &nbsp; </label>
+			<input type="email" autocomplete="off" id="email" placeholder="Email" /><br><br>
+			<label>Mobile Number:</label>
+			<input type="tel" autocomplete="off" id="telephone" placeholder="Phone Number" /><br><br>
+			<label>Address:&emsp; &nbsp; &nbsp; &emsp;</label>
+			<input type="text" autocomplete="off" id="address" placeholder="Address" /><br><br>
+			<label>Password:&emsp; &nbsp; &emsp;</label>
+			<input type="password" autocomplete="off" id="password" placeholder="Password" /><br><br>
+
+
+			<input type="submit" value="Sign Up" id="submit"  /><br>
+		</form>
+		Already have an Account? <a href="login.html">Login</a>
+		<br>
+		Return to <a href="index.html">HomePage</a>
+
+	</div>
+
+	<script>
+		const form = document.getElementById('reg-form')
+		form.addEventListener('submit', registerUser)
+
+		async function registerUser(event) {
+			event.preventDefault()
+			const username = document.getElementById('username').value
+			const email = document.getElementById('email').value
+			const telephone = document.getElementById('telephone').value
+			const address = document.getElementById('address').value
+			const password = document.getElementById('password').value
+
+			const result = await fetch('/api/register', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					username,
+					email,
+					telephone,
+					address,
+					password
+				})
+			}).then((res) => res.json())
+
+			if (result.status === 'ok') {
+				// everything went fine
+					window.location.href = ["./login.html"];
+				alert('Success \nNow, please log into your account')
+			} else {
+				alert(result.error)
+			}
+		}
+	</script>
+
+</body>
+
+</html>

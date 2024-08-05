@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Droid+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+body::before {
+  content: "";
+  background: url('../Images/cartbg.jpeg') no-repeat center center/cover;
+  position: absolute;
+  height: 642px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 57%;
+  z-index: -2;
+  opacity: 0.89;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  font-weight: bold;
+  font-size: 18px;
+  top: 0;
+  z-index: 100;
+
+}
+
+#logo img {
+  height: 5rem;
+}
+
+
+#navbar ul li {
+  list-style: none;
+  /* cursor: pointer; */
+}
+#arrowup{
+  position: fixed;
+  z-index: 50;
+  bottom: 2.5rem;
+  right: 0.8rem;
+  height:10vh
+}
+
+#option {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+#option a{
+  text-decoration: none;
+  color: white;
+  padding: 0rem 5rem 0rem 0rem;
+}
+#menuhai{
+  margin-top: 2rem;
+  margin-left: 40rem;
+  font-size: 5rem;
+  width: 11rem;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  border-bottom: 2px solid white;
+  
+}
+.Container{
+  margin-top: 15rem;
+  font-size: 1.5em;
+  font-family: 'Bitter', serif;
+
+}
+.shop-items{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.section-header{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  text-align: center;
+
+}
+.shop-item-image{
+  width: 17rem;
+  height: 15rem;
+  padding-left: 2rem;
+  margin-left: 1rem;
+}
+#pavbhaji,#thupka,#ghewar,#fujian,#pastry,#ladoo{
+  padding-left: 1.5rem;
+}
+#vada,#pasta{
+  padding-left: 2rem;
+}
+#wings{
+  margin-left: 1.5rem;
+}
+.shop-item-title{
+  margin-left: 8rem;
+  font-weight: bold;
+}
+.shop-item-price,.shop-item-button{
+  margin-top: 1rem;
+  margin-left: 4rem;
+  font-weight: bold;
+}
+.shop-item-button{
+  margin-left: 4rem;
+  background-color: black;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+.shop-item-button:hover{
+  transform: scale(1.05);
+}
+.shop-item-button:active{
+  transform: translateY(5px);
+}
+.cart-row{
+   display:grid;
+  grid-template-columns: auto auto auto;
+  /*justify-content: space-evenly; */
+}
+.cart-header{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.cart-items{
+  font-size: 1.5rem;
+}
+.cart-total{
+  text-align: center;
+  font-size: 3rem;
+}
+.btn-purchase{
+  margin-left: 40rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: black;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+.btn-purchase:hover{
+  transform: scale(1.05);
+}
+.btn-purchase:active{
+  transform: translateY(5px);
+}
+/* .btn-purchase a{
+  color: white;
+  text-decoration: none;
+} */
+strong{
+  font-weight: lighter;
+}
+.btn-danger{
+  background-color:red;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+/* .btn-danger:hover{
+} */
+.btn-danger:active{
+  transform: scale(1.05);
+}
+.cart-quantity-input{
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+.cart-total{
+  margin-top: 2rem;
+}
+#gst{
+  font-size: 1rem;
+  font-weight: bold;
+}
+form{
+  font-family: 'Bitter', serif;
+
+}
+.cart-item-image{
+  display: none;
+}
+.cart-item,.cart-price,.cart-quantity{
+  border: 2px solid black;
+}
+#jyadahope{
+  display: none;
+  color: crimson;
+  background-color: white;
+  box-shadow: 1rem 1rem crimson;
+  position: fixed;
+  z-index: 10;  
+  width: 30rem;
+  bottom: 18rem;
+  left: 30rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+#jyadahope span{
+  display: block;
+  text-align: center;
+}
+wow{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+wow:hover{
+  color: white;
+  background-color: crimson;
+  cursor: pointer;
+}
+wow:active{
+  transform: translateY(2px);
+}

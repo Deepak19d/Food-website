@@ -1,0 +1,114 @@
+#navbar::before {
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-weight: bold;
+    font-size: 18px;
+    top: 0;
+    z-index: 100;
+
+}
+
+#logo img {
+    height: 5rem;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    /* cursor: pointer; */
+}
+
+#option {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+#option a{
+    text-decoration: none;
+    color: white;
+    padding: 0rem 5rem 0rem 0rem;
+}
+#service a,
+#getapp a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 2rem 0 0;
+}
+
+#service,
+#getapp a,#service1 a{
+    display: flex;
+    align-items: center;
+
+}
+#getapp{
+   margin-left: 35rem;
+   margin-bottom: 0.2rem;
+}
+
+#service {
+    margin-left: 3rem;
+}
+#service button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#service1{
+    margin-bottom: 0.2rem
+
+}
+#service1 span{
+    font-size: 2rem;
+}
+
+/* #profile{
+    position: fixed;
+    width: 3rem;
+    right: 6.7rem;
+    top: 1.2rem;
+    display: none;
+}
+#profile1{
+    position: fixed;
+    width: 0.7rem;
+    right: 7.9rem;
+    top: 4.2rem;
+    display: none;
+}
+
+#profileoption{
+    position: fixed;
+    background-color: white;
+    border: 1px solid black;
+    right: 7.3rem;
+    top: 4.85rem;
+    display: none;
+    text-align: center;
+}
+#profileoption h2{
+    font-weight: lighter;
+    font-size: 1.05rem;
+    padding:0rem 0.2rem 0rem 0.2rem;
+}
+#profileoption h2 a{
+    text-decoration: none;
+    color: black;    
+} */

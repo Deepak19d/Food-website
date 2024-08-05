@@ -1,0 +1,38 @@
+#flexitems{
+    width: 40vw;    
+    font-size: 1.5rem;  
+    margin-left: 10rem;   
+    margin-top: 3.5rem;
+}
+
+#getapplink h1{
+    font-family: 'Roboto Mono', monospace;
+    width: 30vw;
+}
+#getapplink{
+    font-family: 'PT Sans', sans-serif;
+    height: 75vh;
+    display: flex;
+    margin-top:2rem;
+}
+#getapplink p{
+    border: 2px solid white;
+    margin-top: 2rem;
+    width: 27vw;
+    font-size: 1.8rem;
+}
+.playlink{
+    left: 12rem;
+    padding-top: 2rem;
+}
+.applink{
+    left: 30rem;
+    padding-top: 2rem;
+
+}
+#applink{
+    height: 70vh;
+    margin-left: 7rem;
+}
+
+
